@@ -1,0 +1,43 @@
+<svg width="1420" height="1900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card background with gradient -->
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4a4a6e;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2a2a3e;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+
+  <!-- Card border -->
+  <rect width="1420" height="1900" fill="url(#cardGrad)" rx="60"/>
+
+  <!-- Inner glow -->
+  <rect x="40" y="40" width="1340" height="1820" fill="url(#centerGlow)" rx="40"/>
+
+  <!-- Card suit (Spade) -->
+  <g transform="translate(710, 500)">
+    <path d="M 0,-160 Q -60,-100 -60,0 Q -60,60 0,120 Q 60,60 60,0 Q 60,-100 0,-160 Z"
+          fill="#ff6b9d" opacity="0.3"/>
+    <rect x="-30" y="80" width="60" height="160" fill="#ff6b9d" opacity="0.3" rx="10"/>
+  </g>
+
+  <!-- Card rank -->
+  <text x="710" y="1200" font-family="Arial Black, sans-serif" font-size="400"
+        fill="#ff6b9d" text-anchor="middle" opacity="0.4" font-weight="bold">A</text>
+
+  <!-- Decorative corner elements -->
+  <circle cx="160" cy="160" r="80" fill="#ff6b9d" opacity="0.2"/>
+  <circle cx="1260" cy="160" r="80" fill="#6bcdff" opacity="0.2"/>
+  <circle cx="160" cy="1740" r="80" fill="#6bcdff" opacity="0.2"/>
+  <circle cx="1260" cy="1740" r="80" fill="#ff6b9d" opacity="0.2"/>
+
+  <!-- Text overlay -->
+  <text x="710" y="1700" font-family="Arial, sans-serif" font-size="72"
+        fill="#ffffff" text-anchor="middle" opacity="0.6">BALATRO</text>
+  <text x="710" y="1780" font-family="Arial, sans-serif" font-size="48"
+        fill="#aaaaaa" text-anchor="middle" opacity="0.5">Shader Demo</text>
+</svg>
+
